@@ -1,0 +1,13 @@
+// GLOBAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 118px;
+    font-family: "Roboto", sans-serif;
+    @include flex("column");
+    min-height: 100vh;
+}

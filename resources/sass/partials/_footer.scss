@@ -1,0 +1,30 @@
+footer {
+    border-top: 20px solid $brand-color;
+    background-color: $footer-color;
+    .container {
+        @include flex("space-bet");
+        height: 107px;
+        align-items: center;
+    }
+    button {
+        padding: 10px 20px;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+        border: 2px solid $brand-color;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    .social {
+        @include flex("vertical");
+        span {
+            color: $brand-color;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        img {
+            margin-left: 20px;
+        }
+    }
+}

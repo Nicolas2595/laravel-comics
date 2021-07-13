@@ -1,0 +1,31 @@
+main {
+     background-color: $background-color;
+    flex-grow: 1;
+    .container {
+        @include flex("column-horizontal");
+    }
+    .cards {
+        margin: 80px 0 20px;
+        @include flex("horizontal");
+        flex-wrap: wrap;
+        width: 100%;
+        .card {
+            color: white;
+            margin: 10px;
+            width: calc(100% / 6 - 20px);
+            @include flex("column");
+            img {
+                width: 100%;
+            }
+        }
+    }
+    button {
+        padding: 10px 45px;
+        background-color: $brand-color;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
